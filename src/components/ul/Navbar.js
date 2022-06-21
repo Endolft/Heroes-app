@@ -16,7 +16,7 @@ export const Navbar = () => {
             
             <NavLink 
                 className="navbar-brand container" 
-                to="/universes"
+                to="/"
             >
                 Universes
             </NavLink>
