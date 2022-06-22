@@ -44,18 +44,18 @@ export const HeroScreen = () => {
       <ul className='list-group list-group-flush'>
         <li className='list-group-item'><b>Alter ego:</b> {heroe.alter_ego}</li>
         <li className='list-group-item'><b>Publisher:</b> {heroe.publisher}</li>
-        <li className='list-group-item'><b>Primera aparicion:</b>  {heroe.first_appearance}</li>
+        <li className='list-group-item'><b>first_appearance:</b>  {heroe.first_appearance}</li>
 
       </ul>
       <br/>
-      <h5 className='mt-3'>Personaje:</h5>
+      <h5 className='mt-3'>characters:</h5>
       <br/>
       <p>{heroe.characters}</p>
 
       <button
       className='btn btn-outline-info  '
       onClick={handleReturn}>
-        Regresar</button>
+        Return</button>
 
       </div>
 
