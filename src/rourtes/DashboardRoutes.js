@@ -13,6 +13,7 @@ export const DashboardRoutes = () => {
     <>
     <Navbar/> 
     <div className="container">
+    
 
     <Routes>
         <Route path="/marvel" element={<MarvelScreen/>} />
@@ -21,7 +22,7 @@ export const DashboardRoutes = () => {
         <Route path="/search" element={<SearchScreen/>} />
         <Route path="/hero/:heroeId" element={<HeroScreen/>}/>
         
-        <Route path="/universes" element={<Universes/>} />
+        <Route path="/" element={<Universes/>} />
 
 
       </Routes>

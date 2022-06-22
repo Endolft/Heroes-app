@@ -1,42 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import { UniversesCard } from "./UniversesCard";
 
 export const Universes = () => {
   return (
-    <div className="container mt-5 animate__animated animate__fadeInLeft" >
-      <div className="row ">
+    <div className="container overflow-hidden mt-5 animate__animated animate__fadeInLeft">
+      <div className="row gx-5 ">
         <div className="col">
-          <div className="row ">
-            <div className=" text-center">
-              <Link to={`/dc`} className="link-dark">
-                <h3>
-                  <b>Universe Dc</b>
-                </h3>
-              </Link>
-            </div>
-
-            <img
-              src="\assets\dc-universe.png"
-              className="rounded float-start "
-              height={400}
+          <div className="row gx-5  ">
+            <UniversesCard
+              srcurl={"/assets/dc-universe.png"}
+              alt={"Dc Universe"}
+              url={"/dc"}
+              name={"Dc Universe"}
             />
           </div>
         </div>
-        <div className="col ">
-          <div className="row ">
-            <div className=" text-center">
-              <Link to={`/marvel`} className="link-dark">
-                <h3>
-                  <b> Universe Marvel</b>
-                </h3>
-              </Link>
-            </div>
 
-            <img
-              src="\assets\marvel-universe.jpg"
-              className="rounded float-end  "
-              height={400}
-            />
+        <div className="col ">
+          <div className="row gx-5 ">
+            <div className=" text-center">
+              <UniversesCard
+                srcurl={"/assets/marvel-universe.jpg"}
+                alt={"Universe Marvel"}
+                url={`/marvel`}
+                name={"Universe Marvel"}
+              />
+            </div>
           </div>
         </div>
       </div>

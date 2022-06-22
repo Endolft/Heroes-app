@@ -16,7 +16,7 @@ export const SearchScreen = () => {
   const [{ searchText }, HandleInputChange, reset] = useForm({
     searchText: "",
   });
-z
+
   const handleSearch = (e) => {
     e.preventDefault();
     reset();
