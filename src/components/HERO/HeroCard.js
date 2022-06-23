@@ -16,9 +16,9 @@ return (
 
         <div className="col-xsm-12 mt-5"> 
         
-        <div className="card  animate__animated animate__fadeIn  animate__delay-0.7s">
+        <div className="card  animate__animated animate__fadeIn  animate__delay-0.7s " >
             
-            <img src={imagePatch } className="card-img  " alt={superhero}/>
+            <img src={imagePatch } className="card-img p-4 " alt={superhero}/>
             
         
     

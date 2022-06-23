@@ -32,25 +32,28 @@ export const SearchScreen = () => {
       <hr />
 
       <div className="row">
-        <div className="col-5">
+        <div className="col-12">
           <form onSubmit={handleSearch}>
             <input
               type="text"
-              className="form-control"
+              className="form-control "
               placeholder="Search a hero.."
               autoComplete="off"
               name="searchText"
               value={searchText}
               onChange={HandleInputChange}
             />
+            <div className="d-flex flex-row-reverse">
 
-            <button type="submit" className="btn btn-outline-primary mt-1">
+            <button type="submit" className="btn btn-outline-primary mt-2 left ">
               Search
             </button>
+            </div>
+
           </form>
         </div>
-        <div className="col-7">
-          <h4>Results</h4>
+        <div className="mt-3">
+          <h2>Results</h2>
           <hr />
           {(q==='')?
           
@@ -58,13 +61,13 @@ export const SearchScreen = () => {
           (heroes.length === 0) && <div className="alert alert-danger">dont found {q}</div>
           }
         
+        </div>
           {
           heroes.map( hero=>(
 
             <HeroCard key={hero.id} {...hero}/>
           )
           )}
-        </div>
         
       </div>
     </>
