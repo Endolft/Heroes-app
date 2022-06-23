@@ -7,7 +7,7 @@ return (<>
     <div className="card" >
   <img src={srcurl} className="card-img-top" alt={alt}/>
   <div className="card-body">
-    <div className="card-text">
+    <div className="card-text text-center">
     <Link to={url} className="link-dark">
                 <h3>
                   <b>{name}</b>

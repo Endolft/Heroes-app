@@ -6,13 +6,13 @@ export const Universes = () => {
   return (
     <div className="container overflow-hidden mt-5 animate__animated animate__fadeInLeft">
       <div className="row gx-5 ">
-        <div className="col">
+        <div className="col-xsm-12">
           <div className="row gx-5  ">
             <UniversesCard
-              srcurl={"/assets/dc-universe.png"}
-              alt={"Dc Universe"}
-              url={"/dc"}
-              name={"Dc Universe"}
+              srcurl="/assets/dc-universe.png"
+              alt="Dc Universe"
+              url="/dc"
+              name="Dc Universe"
             />
           </div>
         </div>
